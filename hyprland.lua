@@ -12,8 +12,8 @@
 --
 -- The following line takes the specific configuration
 -- from a file named "specific.lua" placed inside
--- of this folder. Change this line to change the path
--- of the file.
+-- of this directory. Change this line to change the path 
+-- (or name) of the file.
 require("specific")
 
 -- DEFAULTS
@@ -25,7 +25,7 @@ local menu        = "rofi -show run"
 hl.on("hyprland.start", function()
     hl.exec_cmd("systemctl --user start hyprpolkitagent")
     hl.exec_cmd("waybar")
-    hl.exec_cmd("hyprpaper") -- hyprpaper can be configured with a "hyprpaper.conf" file placed inside of this folder
+    hl.exec_cmd("hyprpaper") -- hyprpaper can be configured with a "hyprpaper.conf" file placed inside of this directory
     hl.exec_cmd("cliphist")
     hl.exec_cmd("dunst")
 end)
